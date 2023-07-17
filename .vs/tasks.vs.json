@@ -1,0 +1,90 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Build x86 Debug",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "-j32",
+        "TARGET=mingw32",
+        "DEBUG=1"
+      ]
+    },
+    {
+      "taskLabel": "Build x86 Release",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "-j32",
+        "TARGET=mingw32"
+      ]
+    },
+    {
+      "taskLabel": "Build x64 Debug",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "-j32",
+        "TARGET=mingw64",
+        "DEBUG=1"
+      ]
+    },
+    {
+      "taskLabel": "Build x64 Release",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "-j32",
+        "TARGET=mingw64"
+      ]
+    },
+    {
+      "taskLabel": "Clean",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "clean"
+      ]
+    },
+    {
+      "taskLabel": "Clean proper",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "workingDirectory": "${workspaceRoot}\\build",
+      "command": "wsl",
+      "args": [
+        "--",
+        "make",
+        "mrproper"
+      ]
+    }
+
+  ]
+}

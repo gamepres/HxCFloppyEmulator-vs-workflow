@@ -1,0 +1,28 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppdbg",
+      "name": "GDB: HxCFloppyEmulator.exe",
+      "project": "HxCFloppyEmulator_software\\build\\HxCFloppyEmulator.exe",
+      "projectTarget": "GDB: HxCFloppyEmulator.exe",
+      "cwd": "${workspaceRoot}",
+      "program": "HxCFloppyEmulator_software\\build\\HxCFloppyEmulator.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+      "externalConsole": true
+    },
+    {
+      "type": "cppdbg",
+      "name": "GDB: hxcfe.exe",
+      "project": "HxCFloppyEmulator_cmdline\\build\\hxcfe.exe",
+      "projectTarget": "GDB: hxcfe.exe",
+      "cwd": "${workspaceRoot}",
+      "program": "HxCFloppyEmulator_cmdline\\build\\hxcfe.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+      "externalConsole": true
+    }
+  ]
+}
